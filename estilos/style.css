@@ -1,0 +1,41 @@
+* {color: white; font-family: "Arial"}
+
+body {background-color: #393939;}
+h1,h2 {color: yellow;
+	text-align: center;}
+
+p {	font-family: "Arial"}
+.resaltado1 {color: yellow}
+.resaltado2 {color: red}
+.azul {color: cornflowerblue}
+.rojo {color: red}
+.verde {color: greenyellow}
+.apaza_computacion { font-family: "apaza_computacion"; font-size: 22px }
+.apaza_ciencia { font-family: "apaza_ciencia"; font-size: 22px}
+.apaza_cosas { font-family: "apaza_cosas"; font-size: 22px}
+.apz_devicon {font-family: "apz_devicon"; font-size: 22px}
+
+input, button {color: black}
+
+ul li a {text-decoration: none}
+
+.areaVideo {position: relative;}
+
+.calculadora { grid-area: calculadora;
+				position: absolute;
+				top: 0px;
+				left: 0px;}
+
+.menuCapitulos {
+	position: absolute;
+	width: 550px;
+	top: 0px;
+	right: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 2;
+}
+
+.rejilla1 {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
