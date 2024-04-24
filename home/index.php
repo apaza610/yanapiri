@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 田中="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- <div>
-        <button hx-post="response.php" hx-target="#content">apretame</button>
+        <button hx-post="response.php" hx-target="#田中">apretame</button>
     </div>
-    <div id="content">nonono</div>
+    <div id="田中">nonono</div>
     <hr>
     <button hx-post="response.php?numero=5" hx-params="numero" hx-target="#edad">++</button>
     <div id="edad">~~</div> -->
     <hr>
-    <!-- <button hx-post="response.php" hx-target="#content">++</button> -->
+    <!-- <button hx-post="response.php" hx-target="#田中">++</button> -->
     <?php   $valor=666; ?>
-    <div id="number" hx-get="response.php?valor=<?php echo $valor; ?>" hx-target="#content" hx-swap="innerHTML"><?php echo $valor ?></div>
-    <div id="content">...</div>
+    <div id="田中" hx-get="response.php?valor=<?php echo $valor; ?>"><?php echo $valor ?></div>
+    <!-- <div id="木村" hx-get="response.php" hx-vals='js:{valor: document.getElementById("木村").innerText}'>12</div> -->
+    <!-- <div id="田中">...</div> -->
 
     <?php 
         // echo getcwd();

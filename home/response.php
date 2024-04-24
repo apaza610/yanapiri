@@ -8,5 +8,5 @@
     // $number = $_POST['number'];
     $precio = $_GET['valor'];
     $precio++;
-    echo "el precio aumentado es: $precio";
+    echo "aumentado es: $precio";
 ?>
