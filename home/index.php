@@ -15,12 +15,26 @@
     <hr>
     <button hx-post="response.php?numero=5" hx-params="numero" hx-target="#edad">++</button>
     <div id="edad">~~</div> -->
-    <hr>
+    <!-- <hr> -->
     <!-- <button hx-post="response.php" hx-target="#田中">++</button> -->
     <?php   $valor=666; ?>
-    <div id="田中" hx-get="response.php?valor=<?php echo $valor; ?>"><?php echo $valor ?></div>
+    <div hx-get="response.php?valor=<?php echo $valor; ?>"><?php echo $valor ?></div>
     <!-- <div id="木村" hx-get="response.php" hx-vals='js:{valor: document.getElementById("木村").innerText}'>12</div> -->
+    <!-- <div hx-post="response.php" hx-trigger="submit" hx-vals="{'valor' : 30}">~~</div> -->
+    
+    <!-- <div id="xx" hx-post="response.php" hx-vals="{'valor': document.getElementById('xx').value}">99</div> -->
+    <!-- <div id="comment-section" hx-trigger="submit">
+        <textarea name="comment" placeholder="Write your comment"></textarea>
+        <button type="button" hx-post="response.php" hx-target="#comments" hx-vals="{'postId': 8}">Submit</button>
+    </div>
+    <div id="comments"></div> -->
     <!-- <div id="田中">...</div> -->
+    <!-- <form action="response.php" method="POST">
+        <input type="text" name="名前" value="pepe">
+        <input type="submit" value="enviar">
+    </form> -->
+    <!-- <div id="南" hx-post="response.php" hx-vals='js:{"valor": document.getElementById("南").innerText}'>12</div> -->
+    <!-- <div id="南" hx-get="response.php" hx-vals='js:{"valor": document.getElementById("南").innerText}'>12</div> -->
 
     <?php 
         // echo getcwd();
