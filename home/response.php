@@ -1,7 +1,7 @@
 <?php 
-    $precio = $_GET['valor'];
-    $precio++;
-    echo "aumentado es: $precio";
+    // $precio = $_GET['valor'];
+    // $precio++;
+    // echo "aumentado es: $precio";
 
     //echo "hola HTMX!!!";
     
@@ -14,6 +14,19 @@
 
     
     // print_r($_REQUEST);
+
+    $本 = fopen("listaMMPs.txt", "w") or die("algo ha faallado");
+        
+    set_time_limit(6*60);
+    $directory = new RecursiveDirectoryIterator("D:\apz\maps");
+    $iterator = new RecursiveIteratorIterator($directory);
+    $regex = new RegexIterator($iterator, '/^.+\.mm$/i', RecursiveRegexIterator::GET_MATCH);
+    foreach($regex as $file) {
+        // echo "$file[0] <br>";
+        fwrite($本, "$file[0]\n");
+    }
+
+    fclose($本);
 ?>
 
 

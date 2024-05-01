@@ -8,17 +8,18 @@
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <div>
-        <button hx-post="response.php" hx-target="#田中">apretame</button>
+    <div>
+        Mindmaps <button hx-post="response.php">update</button>
     </div>
+    <!-- 
     <div id="田中">nonono</div>
     <hr>
     <button hx-post="response.php?numero=5" hx-params="numero" hx-target="#edad">++</button>
     <div id="edad">~~</div> -->
     <!-- <hr> -->
     <!-- <button hx-post="response.php" hx-target="#田中">++</button> -->
-    <?php   $valor=666; ?>
-    <div hx-get="response.php?valor=<?php echo $valor; ?>"><?php echo $valor ?></div>
+    <!-- <?php   $valor=666; ?> -->
+    <!-- <div hx-get="response.php?valor=<?php echo $valor; ?>"><?php echo $valor ?></div> -->
     <!-- <div id="木村" hx-get="response.php" hx-vals='js:{valor: document.getElementById("木村").innerText}'>12</div> -->
     <!-- <div hx-post="response.php" hx-trigger="submit" hx-vals="{'valor' : 30}">~~</div> -->
     
@@ -43,21 +44,7 @@
         // while(($file = $d->read()) != false){
         //     echo "名前 $file <br>";
         // }
-        // $d->close();
-
-
-        // $本 = fopen("listaMMPs.txt", "w") or die("algo ha faallado");
-        
-        // set_time_limit(6*60);
-        // $directory = new RecursiveDirectoryIterator("D:\apz\maps");
-        // $iterator = new RecursiveIteratorIterator($directory);
-        // $regex = new RegexIterator($iterator, '/^.+\.mm$/i', RecursiveRegexIterator::GET_MATCH);
-        // foreach($regex as $file) {
-        //     echo "$file[0] <br>";
-        //     fwrite($本, "$file[0]\n");
-        // }
-
-        // fclose($本);
+        // $d->close();        
     ?>
     <!-- <button hx-get="/click">click!</button>     -->
 </body>
