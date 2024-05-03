@@ -17,7 +17,7 @@
 
     $本 = fopen("listaMMPs.txt", "w") or die("algo ha faallado");
         
-    set_time_limit(6*60);
+    set_time_limit(8*60);
     $directory = new RecursiveDirectoryIterator("D:\apz\maps");
     $iterator = new RecursiveIteratorIterator($directory);
     $regex = new RegexIterator($iterator, '/^.+\.mm$/i', RecursiveRegexIterator::GET_MATCH);

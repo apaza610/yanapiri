@@ -8,9 +8,8 @@
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        Mindmaps <button hx-post="response.php">update</button>
-    </div>
+    <button hx-post="response.php" hx-target="#listaMMPs">update</button>
+    <div id="listaMMPs">Mindmaps</div>
     <!-- 
     <div id="田中">nonono</div>
     <hr>
