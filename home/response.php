@@ -18,11 +18,11 @@
     $本 = fopen("listaMMPs.txt", "w") or die("algo ha faallado");
         
     set_time_limit(8*60);
-    $directory = new RecursiveDirectoryIterator("D:\apz\maps");
+    $directory = new RecursiveDirectoryIterator("D:\apz\maps"); //D:\apz\maps\progr\web
     $iterator = new RecursiveIteratorIterator($directory);
     $regex = new RegexIterator($iterator, '/^.+\.mm$/i', RecursiveRegexIterator::GET_MATCH);
     foreach($regex as $file) {
-        // echo "$file[0] <br>";
+        echo "$file[0] <br>";
         fwrite($本, "$file[0]\n");
     }
 
