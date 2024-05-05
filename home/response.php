@@ -21,9 +21,11 @@
     $directory = new RecursiveDirectoryIterator("D:\apz\maps"); //D:\apz\maps\progr\web
     $iterator = new RecursiveIteratorIterator($directory);
     $regex = new RegexIterator($iterator, '/^.+\.mm$/i', RecursiveRegexIterator::GET_MATCH);
+    $n = 0;
     foreach($regex as $file) {
-        echo "$file[0] <br>";
+        echo "$n) $file[0] <br>";
         fwrite($本, "$file[0]\n");
+        $n++;
     }
 
     fclose($本);
