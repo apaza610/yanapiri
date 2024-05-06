@@ -4,26 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" 田中="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <title>Prueba</title>
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
-    <style>
-        .loading-arrow {
-        width: 50px;
-        height: 50px;
-        border: 5px solid transparent;
-        animation: spin 1s linear infinite;
-        margin: 5px auto;
-        }
-        
-        @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-        }
-    </style>
 </head>
 <body>
-    <button hx-post="response.php" hx-target="#listaMMPs" hx-confirm="en serio?" hx-indicator="#señal">update</button>
-    <span><img src="flecha.svg" id="señal" class="loading-arrow"></span>
+    <button hx-post="response.php" hx-target="#listaMMPs" hx-confirm="en serio?">update</button>
     <div id="listaMMPs">Mindmaps</div>
     <!-- 
     <div id="田中">nonono</div>
