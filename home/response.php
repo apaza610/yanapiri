@@ -23,7 +23,7 @@
     $regex = new RegexIterator($iterator, '/^.+\.mm$/i', RecursiveRegexIterator::GET_MATCH);
     $n = 0;
     foreach($regex as $file) {
-        echo "$n) $file[0] <br>";
+        // echo "$n) $file[0] <br>";
         fwrite($本, "$file[0]\n");
         $n++;
     }
