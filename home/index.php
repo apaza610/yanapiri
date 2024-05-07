@@ -10,18 +10,21 @@
 <body>
     <button hx-post="response.php" hx-target="#listaMMPs" hx-confirm="en serio?">update</button>
     <div id="listaMMPs">Mindmaps</div>
-    <?php 
-        $filename = "listaMMPs.txt";
-        if(file_exists($filename)){
-            $lineas = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    <div class="columnas">
+        <?php 
+            $filename = "listaMMPs.txt";
+            if(file_exists($filename)){
+                $lineas = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-            foreach($lineas as $linea){
-                echo "$linea<br>";
+                foreach($lineas as $linea){
+                    $linea = str_replace("D:\\apz\\maps\\", "", $linea);
+                    echo "$linea<br>";
+                }
+            }else{
+                echo "The file does not exist";
             }
-        }else{
-            echo "The file does not exist";
-        }
-    ?>
+        ?>
+    </div>
     <table border="1">
         <tr>
             <td>lklk</td>
