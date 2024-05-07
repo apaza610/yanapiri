@@ -13,13 +13,31 @@
     <div class="columnas">
         <?php 
             $filename = "listaMMPs.txt";
+            $campos = ["art2d", "art3d", "audio", "ciencia", "gdev","health","idioma", "office", "otros", "progr"];
+            echo array_search("health", $campos);
+            $matriz = [];
+
             if(file_exists($filename)){
                 $lineas = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
+                // $filtrada = [string for string in $lineas if "art3d" in string];
+
                 foreach($lineas as $linea){
-                    $linea = str_replace("D:\\apz\\maps\\", "", $linea);
-                    echo "$linea<br>";
+                    if (strpos($linea, "art3d") != false){
+                        $matriz[0][] = $linea;
+                    }
+                    elseif (strpos($linea, "progr") != false){
+                        $matriz[1][] = $linea;
+                    }
+                    // $linea = str_replace("D:\\apz\\maps\\", "", $linea);
+                    // foreach($campos as $campo){
+                    //     if (str_starts_with($linea, $campo)){
+                    //         // echo "---$linea<br>";
+                    //         array_push($matriz[array_search($campo, $campos)], $linea);
+                    //     }
+                    // }
                 }
+                print_r($matriz);
             }else{
                 echo "The file does not exist";
             }
