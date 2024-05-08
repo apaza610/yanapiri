@@ -1,6 +1,9 @@
 body { background-color: #393939;
     color: whitesmoke;
+    font-size: small;
 }
+
+h3 {color: blue;}
 
 .columnas {
     column-count: 5;

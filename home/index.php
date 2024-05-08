@@ -8,47 +8,43 @@
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
 </head>
 <body>
-    <button hx-post="response.php" hx-target="#listaMMPs" hx-confirm="en serio?">update</button>
-    <div id="listaMMPs">Mindmaps</div>
+    <button hx-post="response.php" hx-confirm="en serio?">update?</button>
     <div class="columnas">
         <?php 
             $filename = "listaMMPs.txt";
             $campos = ["art2d", "art3d", "audio", "ciencia", "gdev","health","idioma", "office", "otros", "progr"];
-            echo array_search("health", $campos);
+            // echo array_search("health", $campos);
             $matriz = [];
+
+            // $cadena = "D:/apz/maps/art2d";
+            // echo explode("/", $cadena)[3];  //el elemento 3 contiene el campo deseado "art2d"
 
             if(file_exists($filename)){
                 $lineas = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
-                // $filtrada = [string for string in $lineas if "art3d" in string];
-
                 foreach($lineas as $linea){
-                    if (strpos($linea, "art3d") != false){
-                        $matriz[0][] = $linea;
+                    foreach($campos as $campo){
+                        //if(strpos($linea, $campo) != false){
+                        if(explode("/", $linea)[3] == $campo){
+                            $matriz[array_search($campo, $campos)][] = $linea;
+                        }
                     }
-                    elseif (strpos($linea, "progr") != false){
-                        $matriz[1][] = $linea;
-                    }
-                    // $linea = str_replace("D:\\apz\\maps\\", "", $linea);
-                    // foreach($campos as $campo){
-                    //     if (str_starts_with($linea, $campo)){
-                    //         // echo "---$linea<br>";
-                    //         array_push($matriz[array_search($campo, $campos)], $linea);
-                    //     }
-                    // }
                 }
-                print_r($matriz);
+
+                $i = 0;
+                foreach($matriz as $categoria){                   
+                    echo "<h3>----------------$campos[$i]----------------</h3>";
+                    foreach($categoria as $elemento){
+                        echo str_replace("D:/apz/maps/$campos[$i]/","",$elemento)."<br>";
+                    }
+                    $i++;
+                }
             }else{
-                echo "The file does not exist";
+                echo "File no existe, debes cearlo previamente";
             }
         ?>
     </div>
-    <table border="1">
-        <tr>
-            <td>lklk</td>
-            <td>sldkfl00000</td>
-        </tr>
-    </table>
+    
     <!-- 
     <div id="田中">nonono</div>
     <hr>
