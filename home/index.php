@@ -35,14 +35,18 @@
                 foreach($matriz as $categoria){                   
                     echo "<div class='campo'>----------------$campos[$i]----------------</div>";
                     foreach($categoria as $elemento){
-                        $pathonly = str_replace("D:/apz/maps/$campos[$i]/","",$elemento);
-                        $campo2 = explode("/", $pathonly)[0];
+                        $pathonly = str_replace("D:/apz/maps/$campos[$i]/","",$elemento);   // anim/krita/anim.mm
+                        $campo2 = explode("/", $pathonly)[0];                               // anim
                         $arrTemp = explode("/", $pathonly);
                         end($arrTemp);
-                        $campoN = current($arrTemp);
-                        $pathonly = preg_replace("/^$campo2/i","<span class='campo2'>$campo2</span>",$pathonly);
-                        $pathonly = preg_replace("/$campoN/i","<span class='campoN'>$campoN</span>",$pathonly);
-                        echo $pathonly."<br>";
+                        $campoN = current($arrTemp);                                        // krita.mm
+                        $raiz = str_replace($campoN,"",$pathonly);                          // anim/krita/
+                        // echo $campoN."<br>";
+                        $pathfinal = preg_replace("/^$campo2/i","<span class='campo2'>$campo2</span>",$pathonly);
+                        $laUrl = "http://localhost/apz/maps/$campos[$i]/$raiz";
+                        // $pathonly = preg_replace("/$campoN/i","<a class='campoN' href='.$laUrl.'>$campoN</a>",$pathonly);
+                        $pathfinal = str_replace($campoN,"<a class='campoN' href='$laUrl'>$campoN</a>",$pathfinal);
+                        echo $pathfinal."<br>";
                     }
                     $i++;
                 }
