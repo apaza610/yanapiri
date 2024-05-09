@@ -3,7 +3,7 @@ body { background-color: #393939;
     font-size: small;
 }
 
-h3 {color: blue;}
+.campo {color: rgb(101, 86, 196);}
 
 .columnas {
     column-count: 5;

@@ -33,7 +33,7 @@
 
                 $i = 0;
                 foreach($matriz as $categoria){                   
-                    echo "<h3>----------------$campos[$i]----------------</h3>";
+                    echo "<div class='campo'>-------$campos[$i]----------------</div>";
                     foreach($categoria as $elemento){
                         echo str_replace("D:/apz/maps/$campos[$i]/","",$elemento)."<br>";
                     }
