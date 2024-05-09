@@ -33,9 +33,16 @@
 
                 $i = 0;
                 foreach($matriz as $categoria){                   
-                    echo "<div class='campo'>-------$campos[$i]----------------</div>";
+                    echo "<div class='campo'>----------------$campos[$i]----------------</div>";
                     foreach($categoria as $elemento){
-                        echo str_replace("D:/apz/maps/$campos[$i]/","",$elemento)."<br>";
+                        $pathonly = str_replace("D:/apz/maps/$campos[$i]/","",$elemento);
+                        $campo2 = explode("/", $pathonly)[0];
+                        $arrTemp = explode("/", $pathonly);
+                        end($arrTemp);
+                        $campoN = current($arrTemp);
+                        $pathonly = preg_replace("/^$campo2/i","<span class='campo2'>$campo2</span>",$pathonly);
+                        $pathonly = preg_replace("/$campoN/i","<span class='campoN'>$campoN</span>",$pathonly);
+                        echo $pathonly."<br>";
                     }
                     $i++;
                 }
