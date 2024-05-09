@@ -8,10 +8,7 @@ D:/apz/maps/art2d/cad/freecad/freecad.mm
 D:/apz/maps/art2d/cad/librecad/cad.mm
 D:/apz/maps/art2d/image/analog/analog.mm
 D:/apz/maps/art2d/image/imagick/imagick.mm
-D:/apz/maps/art2d/image/manip/design/design.mm
-D:/apz/maps/art2d/image/manip/design/photoshop/design.mm
-D:/apz/maps/art2d/image/manip/edit/edit.mm
-D:/apz/maps/art2d/image/manip/edit/gimp/gimp.mm
+D:/apz/maps/art2d/image/manip/gimp/gimp.mm
 D:/apz/maps/art2d/image/pintura/blender/pintura.mm
 D:/apz/maps/art2d/image/pintura/krita/krita.mm
 D:/apz/maps/art2d/image/pintura/photoshop/pintar.mm
@@ -20,10 +17,8 @@ D:/apz/maps/art2d/image/pixel/aseprite/aseprite.mm
 D:/apz/maps/art2d/image/pixel/blender/pixel.mm
 D:/apz/maps/art2d/image/pixel/krita/krita.mm
 D:/apz/maps/art2d/image/pixel/pixel.mm
-D:/apz/maps/art2d/image/sprites/atlasPacker/atlasPacker.mm
-D:/apz/maps/art2d/image/sprites/shoebox/plantilla.mm
 D:/apz/maps/art2d/image/sprites/sprites.mm
-D:/apz/maps/art2d/image/sprites/texturePacker/texturePacker.mm
+D:/apz/maps/art2d/image/sprites/txtPacker/txtPacker.mm
 D:/apz/maps/art2d/image/vector/inkscape/inkscape.mm
 D:/apz/maps/art2d/image/vector/scripting/scripting.mm
 D:/apz/maps/art2d/image/vector/scripting/snap/snap.mm
@@ -34,8 +29,7 @@ D:/apz/maps/art2d/video/edit/blender/blender.mm
 D:/apz/maps/art2d/video/obs/obs.mm
 D:/apz/maps/art2d/video/players/Kodi/kodi.mm
 D:/apz/maps/art2d/video/players/vlc/vlc.mm
-D:/apz/maps/art2d/video/subtitle/subtitle.mm
-D:/apz/maps/art2d/video/subtitle/subtitleEdit/subtitleEdit.mm
+D:/apz/maps/art2d/video/subtitleEdit/subtitleEdit.mm
 D:/apz/maps/art2d/video/video.mm
 D:/apz/maps/art3d/chars/anim/akeytsu/akeytsu.mm
 D:/apz/maps/art3d/chars/anim/anim.mm
@@ -91,8 +85,8 @@ D:/apz/maps/art3d/model/sculpt/zbrush/zbrush.mm
 D:/apz/maps/art3d/pipeline/blender/expimp.mm
 D:/apz/maps/art3d/pipeline/daz/export.mm
 D:/apz/maps/art3d/pipeline/daz/import.mm
+D:/apz/maps/art3d/pipeline/hdnEngine/hdnEngine.mm
 D:/apz/maps/art3d/pipeline/houdini/expimpHD.mm
-D:/apz/maps/art3d/pipeline/houdiniEngine/HoudiniEngine.mm
 D:/apz/maps/art3d/pipeline/maya/export.mm
 D:/apz/maps/art3d/pipeline/maya/import.mm
 D:/apz/maps/art3d/pipeline/render/blender/render.mm

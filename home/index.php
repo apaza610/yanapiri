@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
 </head>
 <body>
-    <button hx-post="response.php" hx-confirm="en serio?">update?</button>
+    <button hx-post="response.php" hx-confirm="actualizar lista de MMPs?">update?</button>
     <div class="columnas">
         <?php 
             $filename = "listaMMPs.txt";
