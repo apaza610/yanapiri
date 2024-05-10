@@ -5,7 +5,9 @@ body { background-color: #393939;
 
 .campo {color: lightskyblue;}
 .campo2 {color: red;}
-.campoN {color: yellow;}
+.campoN {color: yellow;
+    text-decoration: none;
+}
 
 .columnas {
     column-count: 6;
