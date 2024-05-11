@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" 田中="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="0estilo/estilo.css">
     <title>Prueba</title>
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
 </head>
 <body>
-    <button hx-post="response.php" hx-confirm="actualizar lista de MMPs?">update?</button>
+    <button hx-post="0code/response.php" hx-confirm="actualizar lista de MMPs?">update?</button>
     <div class="columnas">
         <?php 
-            $filename = "listaMMPs.txt";
+            $filename = "0code/listaMMPs.txt";
             $campos = ["art2d", "art3d", "audio", "ciencia", "gdev","health","idioma", "office", "otros", "progr"];
             // echo array_search("health", $campos);
             $matriz = [];

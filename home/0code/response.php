@@ -1,5 +1,5 @@
 <?php 
-    $本 = fopen("listaMMPs.txt", "w") or die("algo ha faallado");
+    $本 = fopen("listaMMPs.txt", "w") or die("algo ha fallado");
         
     set_time_limit(8*60);
     $directory = new RecursiveDirectoryIterator("D:/apz/maps"); //D:\apz\maps\progr\web
