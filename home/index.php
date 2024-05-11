@@ -5,14 +5,16 @@
     <meta name="viewport" 田中="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="0estilo/estilo.css">
     <title>Prueba</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <script src="https://unpkg.com/htmx.org@1.9.12" crossorigin="anonymous"></script>
 </head>
 <body>
     <button hx-post="0code/response.php" hx-confirm="actualizar lista de MMPs?">update?</button>
-    <a href="pruebas/">🧪pruebas</a> , 
-    <a href="0assets/icons/">🏠iconos</a> , 
-    <a href="maps/idioma/jpn/0softo/kanji/">漢字</a> ,
-    <a href="templates/buscador">🔍</a> , 
+    <a class='campoN' href="pruebas/">🧪pruebas</a> , 
+    <a class='campoN' href="0assets/icons/">🏠iconos</a> , 
+    <a class='campoN' href="maps/idioma/jpn/0softo/kanji/">漢字</a> ,
+    <a class='campoN' href="templates/buscador">🔍</a> , 
     <span id="sitiosweb">
         <input type="checkbox" name="game"    id="game"   value="game"    checked><label for="vehiculo1">Game</label>
         <input type="checkbox" name="cursos"  id="cursos" value="cursos"  checked><label for="vehiculo2">Cursos</label>
@@ -66,43 +68,7 @@
             }
         ?>
     </div>
-    
-    <!-- 
-    <div id="田中">nonono</div>
-    <hr>
-    <button hx-post="response.php?numero=5" hx-params="numero" hx-target="#edad">++</button>
-    <div id="edad">~~</div> -->
-    <!-- <hr> -->
-    <!-- <button hx-post="response.php" hx-target="#田中">++</button> -->
-    <!-- <?php   $valor=666; ?> -->
-    <!-- <div hx-get="response.php?valor=<?php echo $valor; ?>"><?php echo $valor ?></div> -->
-    <!-- <div id="木村" hx-get="response.php" hx-vals='js:{valor: document.getElementById("木村").innerText}'>12</div> -->
-    <!-- <div hx-post="response.php" hx-trigger="submit" hx-vals="{'valor' : 30}">~~</div> -->
-    
-    <!-- <div id="xx" hx-post="response.php" hx-vals="{'valor': document.getElementById('xx').value}">99</div> -->
-    <!-- <div id="comment-section" hx-trigger="submit">
-        <textarea name="comment" placeholder="Write your comment"></textarea>
-        <button type="button" hx-post="response.php" hx-target="#comments" hx-vals="{'postId': 8}">Submit</button>
-    </div>
-    <div id="comments"></div> -->
-    <!-- <div id="田中">...</div> -->
-    <!-- <form action="response.php" method="POST">
-        <input type="text" name="名前" value="pepe">
-        <input type="submit" value="enviar">
-    </form> -->
-    <!-- <div id="南" hx-post="response.php" hx-vals='js:{"valor": document.getElementById("南").innerText}'>12</div> -->
-    <!-- <div id="南" hx-get="response.php" hx-vals='js:{"valor": document.getElementById("南").innerText}'>12</div> -->
 
-    <?php 
-        // echo getcwd();
-        // chdir("D:\apz\maps");
-        // $d = dir(getcwd());
-        // while(($file = $d->read()) != false){
-        //     echo "名前 $file <br>";
-        // }
-        // $d->close();        
-    ?>
-    <!-- <button hx-get="/click">click!</button>     -->
     <script src="0code/codigo.js"></script>
 </body>
 </html>
