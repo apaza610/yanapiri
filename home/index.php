@@ -9,6 +9,17 @@
 </head>
 <body>
     <button hx-post="0code/response.php" hx-confirm="actualizar lista de MMPs?">update?</button>
+    <a href="pruebas/">🧪pruebas</a> , 
+    <a href="0assets/icons/">🏠iconos</a> , 
+    <a href="maps/idioma/jpn/0softo/kanji/">漢字</a> ,
+    <a href="templates/buscador">🔍</a> , 
+    <span id="sitiosweb">
+        <input type="checkbox" name="game"    id="game"   value="game"    checked><label for="vehiculo1">Game</label>
+        <input type="checkbox" name="cursos"  id="cursos" value="cursos"  checked><label for="vehiculo2">Cursos</label>
+        <input type="checkbox" name="sftw2D"  id="sftw2D" value="sftw2D"  >       <label for="vehiculo2">Software2D</label>
+        <input type="checkbox" name="sftw3D"  id="sftw3D" value="sftw3D"  checked><label for="vehiculo2">Software3D</label>
+        <button onclick="abirWebsites()">sitiosFavoritos</button>
+    </span>
     <div class="columnas">
         <?php 
             $filename = "0code/listaMMPs.txt";
@@ -92,5 +103,6 @@
         // $d->close();        
     ?>
     <!-- <button hx-get="/click">click!</button>     -->
+    <script src="0code/codigo.js"></script>
 </body>
 </html>
