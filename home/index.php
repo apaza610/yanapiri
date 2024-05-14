@@ -14,7 +14,7 @@
     <a class='campoN' href="pruebas/">🧪pruebas</a> , 
     <a class='campoN' href="0assets/icons/">🏠iconos</a> , 
     <a class='campoN' href="maps/idioma/jpn/0softo/kanji/">漢字</a> ,
-    <a class='campoN' href="templates/buscador">🔍</a> , 
+    <a class='campoN' href="templates/buscador">🔍</a> __________________________ 
     <span id="sitiosweb">
         <input type="checkbox" name="game"    id="game"   value="game"    checked><label for="vehiculo1">Game</label>
         <input type="checkbox" name="cursos"  id="cursos" value="cursos"  checked><label for="vehiculo2">Cursos</label>
@@ -26,7 +26,6 @@
         <?php 
             $filename = "0code/listaMMPs.txt";
             $campos = ["art2d", "art3d", "audio", "ciencia", "gdev","health","idioma", "office", "otros", "progr"];
-            // echo array_search("health", $campos);
             $matriz = [];
 
             // $cadena = "D:/apz/maps/art2d";
@@ -37,7 +36,6 @@
 
                 foreach($lineas as $linea){
                     foreach($campos as $campo){
-                        //if(strpos($linea, $campo) != false){
                         if(explode("/", $linea)[3] == $campo){
                             $matriz[array_search($campo, $campos)][] = $linea;
                         }
@@ -54,7 +52,6 @@
                         end($arrTemp);
                         $campoN = current($arrTemp);                                        // krita.mm
                         $raiz = str_replace($campoN,"",$pathonly);                          // anim/krita/
-                        // echo $campoN."<br>";
                         $pathfinal = preg_replace("/^$campo2/i","<span class='campo2'>$campo2</span>",$pathonly);
                         $laUrl = "http://localhost/apz/maps/$campos[$i]/$raiz";
                         // $pathonly = preg_replace("/$campoN/i","<a class='campoN' href='.$laUrl.'>$campoN</a>",$pathonly);
