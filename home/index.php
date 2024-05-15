@@ -60,6 +60,7 @@
                     }
                     $i++;
                 }
+                echo "<hr>";
             }else{
                 echo "File no existe, debes cearlo previamente";
             }
