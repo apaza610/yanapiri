@@ -13,7 +13,7 @@
         $n++;
     }
 
-    echo "updated !!";
+    echo "operation updated !!";
 
     fclose($本);
 ?>
