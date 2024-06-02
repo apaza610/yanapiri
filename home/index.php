@@ -30,6 +30,7 @@
 
             // $cadena = "D:/apz/maps/art2d";
             // echo explode("/", $cadena)[3];  //el elemento 3 contiene el campo deseado "art2d"
+            // this line is just a test
 
             if(file_exists($filename)){
                 $lineas = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
