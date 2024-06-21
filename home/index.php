@@ -63,7 +63,7 @@
                 }
                 echo "<hr>";
             }else{
-                echo "File no existe, debes cearlo previamente";
+                echo "File doesnt exist, you must create it previously";
             }
         ?>
     </div>
